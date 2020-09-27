@@ -1,0 +1,230 @@
+*{
+    font-family: 'Baloo Tammudu 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+ html{
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background-color: maroon;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+      background-color: #FF00EB;
+} 
+
+.navbar{
+  
+    position: fixed;
+    margin-top: 10px; 
+    width: 100%;
+    padding: 30px 20px;
+    top: 0;
+    z-index: 999;
+    transition: .3s linear;
+
+}
+
+.sticky{
+
+    background-color: #FF00EB;
+    padding: 18px 0; 
+}
+
+.sticky .navbar-menu a{
+   color: #fff;
+}
+
+.sticky .menu-toggler span{
+   background-color: #fff;
+}
+
+.inner-width{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.menu-toggler{
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+
+.menu-toggler span{
+
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    position: relative;
+    transition: .3s linear;
+}
+
+.navbar-menu a{
+
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    
+    margin-left: 100px;
+    margin-top: auto;
+    transition: .2s linear;
+
+}
+
+.navbar-menu a:hover{
+      color: #FF00EB !important;
+}  
+
+
+.navbar .inner-width{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+
+
+body{
+    
+    background: #000;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 500px;
+    
+}
+.logobg{
+    margin-left: 280px;
+    margin-top: 25px;
+}
+.logobg span{
+    color: #FF00EB;
+    font-size: 100px;
+    font-weight: 500;
+    font-family: 'Kenia', cursive;
+    transform: rotate(45deg);
+    animation: animate 4s linear infinite;
+
+}
+
+.logobg span:nth-child(1){
+    animation-delay: 0s;
+}
+
+.logobg span:nth-child(2){
+    animation-delay: 0.25s;
+}
+.logobg span:nth-child(3){
+    animation-delay: 0.5s;
+}
+.logobg span:nth-child(4){
+    animation-delay: 0.75s;
+}
+.logobg span:nth-child(5){
+    animation-delay: 1s;
+}
+.logobg span:nth-child(6){
+    animation-delay: 1.25s;
+}
+.logobg span:nth-child(7){
+    animation-delay: 1.5s;
+}
+
+.logobg span:nth-child(8){
+    animation-delay: 1.75s;
+}
+
+.logobg span:nth-child(9){
+    animation-delay: 2s;
+}
+.logobg span:nth-child(10){
+    animation-delay: 2.15s;
+}
+.logobg span:nth-child(11){
+    animation-delay: 2.5s;
+}
+.logobg span:nth-child(12){
+    animation-delay: 2.75s;
+}
+.logobg span:nth-child(13){
+    animation-delay: 3s;
+}
+.logobg span:nth-child(14){
+    animation-delay: 3.15s;
+}
+
+
+@keyframes animate{
+    0%,100%{
+        color: #FF00EB;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #FF00EB,
+                     0 0 20px  #FF00EB,
+                     0 0 40px  #FF00EB,
+                     0 0 80px  #FF00EB,
+                     0 0 120px  #FF00EB,
+                     0 0 200px  #FF00EB,
+                     0 0 400px  #FF00EB;
+    }
+    5%,95%{
+        color:#3D3A32;
+        filter: blur(0px);
+        text-shadow: 0 0 10px none;
+    }
+}
+
+.box .content {
+    color: #fff;
+    margin-top: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+footer{
+    background: url(../images/bg2.jpg) no-repeat center;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.copyright{
+    font-size:15px;
+    margin-bottom: 20px;
+}
+
+.copyright a{
+    
+    font-size: 16px;
+    color:#FF00EB;
+    font-weight: 500;
+}
+
+.sm a{
+
+    color: white;
+    margin: 0 10px;
+    transition:  .2s linear;
+}
+
+.sm a:hover{
+
+    color: #FF00EB;
+}
